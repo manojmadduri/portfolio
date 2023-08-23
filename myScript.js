@@ -7,10 +7,10 @@ type =
     $(window).scroll(function () {
       // checks if window is scrolled more than 500px, adds/removes solid class
       if ($(this).scrollTop() > 550) {
-        $(".navbar").addClass("solid");
+        $(".navbar1").addClass("solid");
         $(".back-to-top").addClass("visible");
       } else {
-        $(".navbar").removeClass("solid");
+        $(".navbar1").removeClass("solid");
         $(".back-to-top").removeClass("visible");
       }
     });
@@ -77,3 +77,18 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev"
   }
 });
+
+
+let output = document.getElementById('output');
+  function clearText(event) {
+  // access input field
+         let fname = document.getElementById('fname');
+         let lname = document.getElementById('lname');
+         let subject = document.getElementById('subject');
+
+         // clear the input field.
+         input1.value = "";
+         output.innerHTML += "Form submitted successfully! <br>";
+      }
+
+
