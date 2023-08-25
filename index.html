@@ -12,30 +12,34 @@
   <title>Manoj Madduri</title>
   <link rel="stylesheet" href="./styles.css" />
   <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script  src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <script src="myScript.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-  <header class="header">
-    <!-- <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1120&q=80"/> -->
+
+  <div class="header">
     <div class="navbar1">
-      <div class="navbar1-container container">
+      <div class="navbar1-container container navbar-light">
         <div>
           <h2 class="navbar1-brand">Manoj Madduri</h2>
         </div>
-        <ul class="menu-items">
-          <li><a href="#home-page">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#my-works">Portfolio</a></li>
-          <li><a href="#contact-me">Contact</a></li>
+        <ul class=" nav nav-pills justify-content-end" role="tablist">
+          <li class="nav-item"><a class="nav-link active" data-bs-toggle="pill" href="#home-page">Home</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#my-works">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#contact-me">Contact</a></li>
         </ul>
       </div>
     </div>
+
+
 
     <div class="home-content" id="home-page">
       <div class="name">
@@ -43,8 +47,8 @@
         <p>A Java Full Stack Developer.</p>
       </div>
       <div class="resume-download">
-        <a href="#contact-me" class="btn btn-primary" role="button">Hire Me</a>
-        <a href="./resume/resume.docx" class="btn btn-primary " role="button">Resume</a>
+        <a href="#contact-me" class="hireme-btn" role="button">Hire Me</a>
+        <a href="./resume/resume.docx" class="resume-btn" role="button">Resume</a>
       </div>     
       
       <div class="social-icons">
@@ -69,6 +73,7 @@
               </svg></a>
           </span>
         </Tooltip>
+
         <Tooltip title="Instagram">
           <span>
             <a href=""alt="instagram" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="40" viewBox="0 0 48 48">
@@ -81,16 +86,18 @@
             
       </div>
     </div>
-      <div class="angle-down-icon">
+      
+    
+    
+    <div class="angle-down-icon">
         <a href="#about"><i class="fas fa-angle-down"></i></a>
       </div>
     
       <img src="https://camo.githubusercontent.com/d5f2bcf97f23f8095e1bd9e51f513c99635d3736/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f65312f66332f34312f65316633343133626635303336303435373133333431333934663631373232352e676966" alt="Image" class="img-face img-fluid">
 
-  </header>
+    </div>
+  
   <section class="about-me" id="about">
-
-    <!-- -----------more Skills end-------- -->
     <div class="container">
       <div class="about-content">
         <div class="left-content">
@@ -149,7 +156,8 @@
                 <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
               </p>
             </div>
-            <!-- --------More Skills-------- -->
+            
+
             <div class="show-skills">
               <div>
                 <button id="show-more" onclick="showDiv()">More Skills</button>
@@ -294,6 +302,7 @@
           </div>
         </div>
   </section>
+  
 
   <section id="my-works">
     <div class="portfolio">
@@ -303,13 +312,14 @@
       <div class="carousel" data-flickity>
         <div class="carousel-cell">
           <div class="proj-1">
-            <img src="https://i.postimg.cc/qM9TjGTG/Screenshot-80.png">
+            <img src="./Images/project1.jpg">
             <div class="proj1-details">
               <i class="fab fa-html5"></i>
               <i class="fab fa-css3-alt"></i>
               <i class="fab fa-js"></i>
-              <h2>Recruitment Agencies</h2>
-              <p>Build Using HTML,CSS,JS</p>
+              <i class="fab fa-bootstrap"></i>
+              <h2>Recruiting Consulting Website</h2>
+              <p>Build Using HTML,CSS,JS,Bootstrap</p>
               <button><a href="https://github.com/manojmadduri/jobWebsite" target="blank">View source <i class="fas fa-external-link-alt"></i></a>
               </button>
               <button><a href="https://fervent-lamarr-2bc6cf.netlify.app/" target="blank">Try it Live <i class="fas fa-external-link-alt"></i></a>
@@ -320,18 +330,40 @@
         </div>
         <div class="carousel-cell">
           <div class="proj-2">
-            <img src="https://i.postimg.cc/FR848bSm/Screenshot-76.png">
+            <img src="./Images/project2.jpg.png">
             <div class="proj2-details">
               <i class="fab fa-html5"></i>
               <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-bootstrap"></i>
               <h2>Profile Card</h2>
-              <p>Build Using HTML,CSS</p>
+              <p>Build Using HTML,CSS,JS,Bootstrap</p>
               <button><a href="https://github.com/manojmadduri/amazonProject" target="blank">View source <i class="fas fa-external-link-alt"></i></a>
               </button>
               <button><a href="https://codepen.io/sanketbodke/pen/NWgKyZW" target="blank">Try it Live <i class="fas fa-external-link-alt"></i></a>
               </button>
             </div>
           </div>
+        </div>
+
+        <div class="carousel-cell">
+          <div class="proj-3">
+            <img src="./Images/project3.jpg">
+            <div class="proj3-details">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-bootstrap"></i>
+              <i class="fab fa-react"></i>
+              <h2>React Project</h2>
+              <p>Build Using HTML,CSS,JS,Bootstrap, React</p>
+              <button><a href="https://github.com/manojmadduri/jobWebsite" target="blank">View source <i class="fas fa-external-link-alt"></i></a>
+              </button>
+              <button><a href="https://fervent-lamarr-2bc6cf.netlify.app/" target="blank">Try it Live <i class="fas fa-external-link-alt"></i></a>
+              </button>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -361,6 +393,11 @@
 
 
       <div class="right-contact">
+        <div class="top-img"> 
+            <h1>Message Here<h1>
+              <img class="msg-icon" src="./Images/msgIcon.gif"/>            
+        </div>
+        <img class="contact-img"src="./Images/contactImg.jpg"/>
         <div class="top-form">
           <form action="https://formsubmit.co/65773ca424e6292e655d4126dc76505a" method="POST" enctype="multipart/form-data">
 
@@ -383,6 +420,49 @@
       </div>
 
   </div>
+
+
+  <script>
+    let sv
+    window.onscroll = () => {
+      sv = parseInt(window.scrollY)
+      console.log("scrolling", sv);
+
+
+      if(sv < 750){
+        let navAll = document.querySelectorAll('.nav-link'),i
+        for(i=0; i<navAll.length; i++){
+          navAll[i].classList.remove('active')
+        }
+        navAll[0].classList.add('active')
+      }
+
+      else if(sv >= 750 && sv < 1274){
+        let navAll = document.querySelectorAll('.nav-link'),i
+        for(i=0; i<navAll.length; i++){
+          navAll[i].classList.remove('active')
+        }
+        navAll[1].classList.add('active')
+      }
+      else if(sv >= 1274 && sv < 2024){
+        let navAll = document.querySelectorAll('.nav-link'),i
+        for(i=0; i<navAll.length; i++){
+          navAll[i].classList.remove('active')
+        }
+        navAll[2].classList.add('active')
+      }
+      else if(sv >= 2024){
+        let navAll = document.querySelectorAll('.nav-link'),i
+        for(i=0; i<navAll.length; i++){
+          navAll[i].classList.remove('active')
+        }
+        navAll[3].classList.add('active')
+      }
+
+    }
+
+
+  </script>
 
 </body>
 
